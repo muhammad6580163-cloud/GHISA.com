@@ -1,0 +1,740 @@
+/* ===============================
+   GHISA GLOBAL STYLESHEET
+   Primary Color: Blue
+================================= */
+body{
+    margin:0;
+    padding:0;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(11,61,145,0.15),
+        rgba(0,128,0,0.10),
+        rgba(255,255,255,0.95)
+    ),
+    url("image/Logo.png");
+
+    background-size: cover, 400px;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+}
+
+.topbar {
+    height: 60px;
+    background: #0d6efd;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #1e293b;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #0d6efd;
+}
+
+.content {
+    margin-left: 220px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body{
+    background:#f4f8ff;
+    color:#222;
+}
+
+/* ================= HEADER ================= */
+.ghisa-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#ffffff;
+    color:#3506dd;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo img{
+    height:55px;
+}
+
+.nav-menu{
+    display:flex;
+    gap:25px;
+}
+
+.nav-menu a{
+    color:#001aff;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.nav-menu a:hover{
+    color:#9ec5ff;
+}
+
+.auth-buttons .btn{
+    padding:8px 16px;
+    border-radius:6px;
+    text-decoration:none;
+    background:#fff;
+    color:#0b3d91;
+    margin-left:10px;
+    font-weight:600;
+}
+
+.auth-buttons .primary{
+    background:#1e63ff;
+    color:#fff;
+}
+
+/* ================= HERO ================= */
+.hero{
+    position:relative;
+    height:500px;
+    overflow:hidden;
+}
+
+.hero-slider{
+    display:flex;
+    width:200%;
+    animation:slideMove 20s linear infinite;
+}
+
+.slide{
+    position:relative;
+    min-width:100%;
+}
+
+.slide img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.slide-text{
+    position:absolute;
+    bottom:30px;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    color:#fff;
+    padding:15px 25px;
+    font-size:18px;
+    border-left:5px solid #1e63ff;
+}
+
+/* Animation */
+@keyframes slideMove{
+    0%{ transform:translateX(0); }
+    100%{ transform:translateX(-50%); }
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:#0e0d0d;
+}
+
+.hero-content h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.cta-btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 22px;
+    background:#1e63ff;
+    color:#110e0e;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.cta-btn.outline{
+    background:transparent;
+    border:2px solid #fff;
+}
+
+/* ================= ABOUT / APPRECIATION ================= */
+.about-ghisa{
+    padding:60px 20px;
+    background:#ffffff;
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-family:"Times New Roman", Times, serif;
+}
+
+.about-ghisa h2{
+    color:#0b3d91;
+    margin-bottom:20px;
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+/* Appreciation paragraph */
+.about-ghisa p{
+    font-size:18px;
+    color:#333;
+    text-align:justify;
+    margin-bottom:18px;
+}
+
+/* Optional highlight box */
+.about-ghisa .appreciation-box{
+    background:#f2f6ff;
+    border-left:6px solid #0b3d91;
+    padding:25px;
+    border-radius:6px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+/* Size of the image the banner */
+.about-ghisa img{
+    width:100%;
+    max-width:600px;
+    height:auto;
+    margin:20px auto;
+    display:block;
+    border-radius:6px;
+}
+/* ================= INFO LINKS ================= */
+.info-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:40px;
+}
+
+.info-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#fff;
+    padding:15px 20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.info-item img{
+    width:30px;
+    height:30px;
+}
+
+/* ================= NEWSLETTER ================= */
+.newsletter{
+    background:#0b3d91;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.newsletter input{
+    padding:10px;
+    margin:8px;
+    border:none;
+    border-radius:6px;
+}
+
+.newsletter button{
+    padding:10px 18px;
+    background:#1e63ff;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* ================= FOOTER ================= */
+.footer{
+    background:#081f4b;
+    color:#fff;
+    padding:30px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer a{
+    color:#9ec5ff;
+    text-decoration:none;
+}
+
+/* ================= FORM PREP (for next pages) ================= */
+
+.form-container{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(8px);
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.form-group{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+}
+
+.form-group label{
+    position:absolute;
+    left:12px;
+    top:12px;
+    background:#fff;
+    padding:0 5px;
+    font-size:13px;
+    color:#666;
+    transition:0.3s;
+    pointer-events:none;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label{
+    top:-8px;
+    font-size:11px;
+    color:#1e63ff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+
+    .nav-menu{
+        display:none;
+    }
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .hero{
+        height:350px;
+    }
+
+    .slide img{
+        height:350px;
+    }
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.stat-card p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0d6efd;
+}
+/* ================= LOGIN PAGE ================= */
+
+.login-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    /* Watermark Background */
+    background: url('image/ghisa logo.jpeg') no-repeat center center fixed;
+    background-size: 400px;
+    background-color: #f4f6f9;
+}
+
+.login-overlay {
+    background: rgba(0, 0, 0, 0.65);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 40px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 5px;
+    color: #1e3a8a;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-card button:hover {
+    background-color: #162d66;
+}
+
+.error-message {
+    background: #ffe5e5;
+    color: #cc0000;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-footer {
+    margin-top: 15px;
+    font-size: 14px;
+}
+/* Authentication Pages */
+
+.auth-body {
+    background: url('image/ghisa_logo.png') no-repeat center center fixed;
+    background-size: 400px;
+    background-color: #f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.auth-card {
+    background:white;
+    padding:40px;
+    width:350px;
+    border-radius:8px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.auth-card input {
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.auth-card button {
+    width:100%;
+    padding:10px;
+    background:#0b3d91;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.auth-card button:hover {
+    background:#062c6b;
+}
+/* ================= PAGE BANNER ================= */
+
+.page-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.page-banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.page-banner img.active {
+    opacity: 1;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: rgba(0,0,0,0.5);
+}
+
+.banner-title {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* ================= PAGE CONTENT ================= */
+
+.page-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.page-section {
+    margin-bottom: 40px;
+}
+
+.page-section img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* ================= PORTAL ================= */
+
+.portal-body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+.portal-topbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    background:#0b3d91;
+    color:white;
+}
+
+.portal-logo {
+    height:50px;
+}
+
+.portal-avatar {
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-left:10px;
+}
+
+.portal-container {
+    display:flex;
+}
+
+.portal-sidebar {
+    width:220px;
+    background:#1e293b;
+    min-height:100vh;
+    padding:20px;
+}
+
+.portal-sidebar a {
+    display:block;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+    margin-bottom:5px;
+}
+
+.portal-sidebar a:hover {
+    background:#334155;
+}
+
+.portal-content {
+    flex:1;
+    padding:30px;
+}
+
+.portal-content-full {
+    padding:40px;
+}
+
+.dashboard-card {
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.edit-link {
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+/* ================= ENHANCED DASHBOARD ================= */
+
+.dashboard-title {
+    margin-bottom: 25px;
+    color: #0b3d91;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Passport styling control */
+.portal-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+    background: linear-gradient(to right, #0b3d91, #1e3a8a);
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.announcement-text {
+    display: inline-block;
+    padding: 10px 0;
+    animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+}
+
+.verified {
+    background: #16a34a;
+}
+
+.not-verified {
+    background: #dc2626;
+}
+
+.pending {
+    background: #f59e0b;
+}
+
+/* Buttons */
+.portal-btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #0b3d91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.portal-btn:hover {
+    background: #062c6b;
+}
+
+/* Welcome box */
+.welcome-box {
+    margin-right: 10px;
+    font-weight: bold;
+}
